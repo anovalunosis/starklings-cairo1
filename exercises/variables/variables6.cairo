@@ -4,9 +4,9 @@
 // I AM NOT DONE
 use debug::PrintTrait;
 
-const NUMBER = 3;
+//const NUMBER = 3_u64; 
 const SMALL_NUMBER = 3_u8;
 fn main() {
-    NUMBER.print();
+    //NUMBER.print();
     SMALL_NUMBER.print();
 }

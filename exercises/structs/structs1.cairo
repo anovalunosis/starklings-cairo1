@@ -5,6 +5,7 @@
 // I AM NOT DONE
 #[derive(Copy, Drop)]
 struct ColorStruct {
+    red: felt256, green: felt256 , blue: felt256
     // TODO: Something goes here
     // TODO: Your struct needs to have red, green, blue felts
 }
@@ -14,7 +15,7 @@ struct ColorStruct {
 fn classic_c_structs() {
     // TODO: Instantiate a classic color struct!
     // Green color neeeds to have green set to 255 and, red and blue, set to 0
-    // let green =
+    let green = ColorStruct{ red: 0,green: 255, blue: 0 }
 
     assert(green.red == 0, 0);
     assert(green.green == 255, 0);
