@@ -9,10 +9,13 @@ use traits::Into;
 
 #[derive(Copy, Drop)]
 enum Message { // TODO: define the different variants used below
-    Quit: (),
-    Echo: (),
-    Move: (),
-    ChangeColor: (u8,u8,u8)
+    Quit: 'Quit',
+    Echo: felt,
+    Move {
+        x: felt,
+        y: felt
+    },
+    Point
 }
 
 
