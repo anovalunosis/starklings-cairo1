@@ -7,6 +7,7 @@
 
 
 fn modulus(x : u8, y: u8) ->  u8 {
+
     // calculate the modulus of x and y
     // FILL ME
     res
@@ -14,11 +15,15 @@ fn modulus(x : u8, y: u8) ->  u8 {
 
 fn floor_division(x: usize, y: usize) -> u32 {
     // calculate the floor_division of x and y
+    let res: u32;
+    res = x % y;
+
     // FILL ME
     res
 }
 
 fn multiplication(x: u64, y: u64) -> u64 {
+    let res = x * y;
     // calculate the multiplication of x and y
     // FILL ME
     res
