@@ -3,20 +3,17 @@
 // And always watch out for overflows e.g in the last test
 // Let try to use them
 
-// I AM NOT DONE
-
 
 fn modulus(x : u8, y: u8) ->  u8 {
-
+    let res = x % y;
     // calculate the modulus of x and y
     // FILL ME
     res
 }
 
-fn floor_division(x: usize, y: usize) -> u32 {
+fn floor_division(x: usize, y: usize) -> usize {
     // calculate the floor_division of x and y
-    let res: u32;
-    res = x % y;
+    let res = x / y;
 
     // FILL ME
     res
