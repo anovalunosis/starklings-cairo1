@@ -7,8 +7,6 @@ struct ColorStruct {
     red: felt252, 
     green: felt252, 
     blue: felt252
-    // TODO: Something goes here
-    // TODO: Your struct needs to have red, green, blue felts
 }
 
 
