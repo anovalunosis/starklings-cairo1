@@ -18,7 +18,7 @@ trait AnimalTrait {
     fn make_noise(self: Animal) -> felt252;
 }
 
-impl AnimalImpl of AnimalTrait {// TODO: implement the trait AnimalTrait for Animal
+impl AnimalImpl of AnimalTrait {
     fn new(noise: felt252) -> Animal {
         Animal { noise: noise }
     }

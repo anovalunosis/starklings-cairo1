@@ -64,15 +64,14 @@ impl AnimalDogImpl of AnimalTrait::<Dog> {
 // TODO: implement DogTrait for the type Dog
 
 impl DogImpl of DogTrait {
-    fn walk(ref self: Dog) {
-        ('test').print()
+    fn walk(self: Dog) {
+        self.distance = 1u32;
     }
 }
 
 impl FishImpl of FishTrait {
-    fn swim(ref self: Fish)  {
-        ('test').print()
-        self = Fish
+    fn swim(self: Fish)  {
+        self.distance = 1u32;
     }
 }
 
