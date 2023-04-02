@@ -31,9 +31,26 @@ trait AnimalTrait<T> {
 }
 
 impl CatImpl of AnimalTrait::<Cat> {
+   fn new(noise: felt252) -> Cat {
+        Cat { noise: noise }
+    }
+
+    fn make_noise(self: Cat) -> felt252 {
+        self.noise
+    }
     // TODO: implement the trait Animal for the type Cat
 }
 
+impl CowImpl of AnimalTrait::<Cow> {
+   fn new(noise: felt252) -> Cow {
+        Cow { noise: noise }
+    }
+
+    fn make_noise(self: Cow) -> felt252 {
+        self.noise
+    }
+    // TODO: implement the trait Animal for the type Cat
+}
 // TODO: implement the trait Animal for the type Cow
 
 #[test]

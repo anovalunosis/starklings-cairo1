@@ -59,9 +59,22 @@ impl AnimalDogImpl of AnimalTrait::<Dog> {
     }
 }
 
-// TODO: implement FishTrait for the type Fish
+// TODO: implement FishTrait for the type Fish 
 
 // TODO: implement DogTrait for the type Dog
+
+impl DogImpl of DogTrait {
+    fn walk(ref self: Dog) {
+        ('test').print()
+    }
+}
+
+impl FishImpl of FishTrait {
+    fn swim(ref self: Fish)  {
+        ('test').print()
+        self = Fish
+    }
+}
 
 #[test]
 fn test_traits3() {
