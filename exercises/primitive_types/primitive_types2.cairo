@@ -1,8 +1,7 @@
 // primitive_types2.cairo
 // Fill in the rest of the line that has code missing!
 // No hints, there's no tricks, just get used to typing these :)
-
-// I AM NOT DONE
+ 
 
 use debug::PrintTrait;
 

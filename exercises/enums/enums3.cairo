@@ -58,10 +58,28 @@ impl StateImpl of StateTrait {
     ) { // TODO: create a match expression to process the different message variants
     // Remember: When passing a tuple as a function argument, you'll need extra parentheses: fn function((t, u, p, l, e))
         //self.color = message::Point.x;
+        let result = match message {
+            Message::ChangeColor() => {
+                self.color = (u8, u8, u8);
+            },
 
+            Message::Echo() => {
+                self.position = 'Quit';
+            },
+            Message::Move(Point { x: 10_u8, y: 15_u8 })) => {
+                self.quit = Point {x: ,y:}
+            },
+
+            Message::Quit(()) => {
+                self.quit = 
+            },
+
+        };
         if message == Message::ChangeColor((255_u8, 0_u8, 255_u8)) {
             self.color = message.ChangeColor
         }
+
+        
         //self.position.x = message.Point.x;
         //self.position.y = message.Point.y;
         //self.quit = true;

@@ -12,8 +12,7 @@
 
 // No hints for this one!
 // Execute `starklings hint traits2` or use the `hint` watch subcommand for a hint.
-
-// I AM NOT DONE
+ 
 
 #[derive(Copy, Drop)]
 struct Cat {
@@ -31,27 +30,26 @@ trait AnimalTrait<T> {
 }
 
 impl CatImpl of AnimalTrait::<Cat> {
-   fn new(noise: felt252) -> Cat {
-        Cat { noise: noise }
+    fn new() -> Cat {
+        Cat { noise: 'meow' }
     }
 
     fn make_noise(self: Cat) -> felt252 {
         self.noise
     }
-    // TODO: implement the trait Animal for the type Cat
+    
 }
 
 impl CowImpl of AnimalTrait::<Cow> {
-   fn new(noise: felt252) -> Cow {
-        Cow { noise: noise }
+    fn new() -> Cow {
+        Cow { noise: 'moo' }
     }
 
     fn make_noise(self: Cow) -> felt252 {
         self.noise
     }
-    // TODO: implement the trait Animal for the type Cat
+    
 }
-// TODO: implement the trait Animal for the type Cow
 
 #[test]
 fn test_traits2() {
