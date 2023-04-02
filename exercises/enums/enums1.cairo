@@ -1,9 +1,10 @@
 // enums1.cairo
 // No hints this time! ;)
 
+
 use debug::print;
 use debug::PrintTrait;
-enum Message { // TODO: define a few types of messages as used below
+enum Message { // TODO: define a few types of messages as used below   
     Quit: (),
     Echo: (),
     Move: (),

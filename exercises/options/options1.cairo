@@ -1,8 +1,6 @@
 // options1.cairo
 // Execute `starklings hint options1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 use option::OptionTrait;
 
 // This function returns how much icecream there is left in the fridge.

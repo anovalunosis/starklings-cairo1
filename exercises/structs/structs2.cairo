@@ -32,6 +32,8 @@ fn test_your_order() {
     // TODO: Deserialize your order into multiple variables to make the assertions pass!
     // let ...
 
+    let Foo {name,year,made_by_phone,made_by_mobile,made_by_email,item_number,count) = order_template
+
     assert(name == 'Bob', 'Wrong name');
     assert(year == order_template.year, 'Wrong year');
     assert(made_by_phone == order_template.made_by_phone, 'Wrong phone');
