@@ -6,18 +6,18 @@ use option::OptionTrait;
 // This function returns how much icecream there is left in the fridge.
 // If it's before 10PM, there's 5 pieces left. At 10PM, someone eats them
 // all, so there'll be no more left :(
-fn maybe_icecream(time_of_day: usize) -> Option<u32> {
-    if time_of_day > 21_usize or time_of_day == 0_usize {
-        let optional_none: Option<u32> = Option::None(());
-        return optional_none
+fn maybe_icecream(time_of_day: usize) -> Option<usize> { 
+    if time_of_day > 21_usize |time_of_day == 0_usize {
+        let optional_none: Option<usize> = Option::None((usize));
+        return Option::None(());
     }
-    else if time_of_day < 22_size {
-        let optional_none: Option<u32> = Option::None(());
+    else if time_of_day < 22_usize {
+        let optional_none: Option<usize> = Option::Some((5_usize));
         return optional_none
     }
     // We use the 24-hour system here, so 10PM is a value of 22 and 12AM is a value of 0
     // The Option output should gracefully handle cases where time_of_day > 23.
-    // TODO: Complete the function body - remember to return an Option!
+    // TODO: Complete the function body - remember to return an Option! 
 }
 
 
@@ -34,5 +34,5 @@ fn check_icecream() {
 fn raw_value() {
     // TODO: Fix this test. How do you get at the value contained in the Option?
     let icecreams = maybe_icecream(12_usize);
-    assert(icecreams == 5_usize, 'err_6');
+    assert(icecreams.unwrap() == 5_usize, 'err_6');
 }
